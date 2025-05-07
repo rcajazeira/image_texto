@@ -39,21 +39,26 @@ body {
     
 }
 
-.lista{
+.lista {
     & ul {
         list-style: none;
     }
 
     & li {
-    margin-bottom: 20px;
-    gap: 20px;
-    text-align: center;
-    display: flexbox;
-    color:aliceblue;
-    font-size: 1.5rem;  
-    padding: 400px;
+        margin: 0;
+        padding: 0;
+        font-size: 1.5rem;
+        color: aliceblue;
+        text-align: left;
+        margin-top: 20px;
+        padding-left: 180px;
+        display: inline;
+        gap: 5px;
+        
     }
 }
+   
+
 
 .imagem {
    
