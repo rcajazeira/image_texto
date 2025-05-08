@@ -1,91 +1,61 @@
 body {
     margin: 0;
-    
-}
-.conteudo {
-    
+  }
+  
+  .conteudo {
     width: 100vw; 
     height: 100vh; 
     position: relative;
-    & img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 0;
-    }
-   
-      
-}
-.texto {
+  }
+  
+  .conteudo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
-    /* top: 50%;
-    left: 50%; */
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  /* Texto sobre a imagem */
+  .texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-   /*  font-size: 2rem; */
-    /* text-align: center; */
-    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
     z-index: 1;
     font-family: 'Arial', sans-serif;
-    & h2{
-        font-size: 2.5rem;
-        margin: 0;
-        color: aliceblue;
-        text-align: left;
-        margin-top: 200px;
-        padding-left: 180px;
-    }
-
-    & .lista{
-        margin-top: 20px;
-        padding-left: 500px;
-        font-size: 1.5rem;
-        color: white;
-        text-decoration: none;
-    }
-
-    
-}
-
-/* .lista {
-    position: absolute;
-    margin-bottom: 5000px;
-    padding-left: 800px;
-    z-index: 1;
-    color: white;
-    text-decoration: none; */
+    text-align: center;
+  }
   
-   /*  & a {
-        text-decoration: none;
-        color: white;
-        font-size: 1.5rem;
-        text-align: center;
-        display: inline-block;
-        gap: 5px;
-    }
-   
-
-    & ul {
-        list-style: none;
-    }
-
-    & li {
-        margin: 0;
-        padding: 0;
-        font-size: 1.5rem;
-        text-align: center;
-        margin-left: 10px;
-        padding-left: 20px;
-        display: inline;
-        gap: 5px;
-        
-    } */
-/* } */
-   
-
-
-.imagem {
-   
-   
-
-}
+  /* Título */
+  .texto h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: aliceblue;
+  }
+  
+  /* Lista de links */
+  .lista {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .lista li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .lista li a:hover {
+    color: #f0c040;
+  }
+  
