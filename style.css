@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -57,6 +58,24 @@ body {
     color: white;
     font-size: 1.2rem;
     z-index: 1;
+
+    & ul{
+        list-style: none;
+        
+    }
+    & li a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+        display: inline;
+        margin-right: 40px;
+        }
+        & p{
+            margin-right: 1px;
+            display: flex;
+            margin: 42px;
+        }
   }
   
   /* Texto e botão central */
@@ -68,16 +87,18 @@ body {
     color: white;
     text-align: center;
     z-index: 1;
+    font-size: 2rem;
   }
   
   .texto-central button {
     margin-top: 10px;
-    padding: 10px 20px;
+    padding: 15px 50px;
     border: none;
     background-color: white;
     color: black;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgb(22, 21, 21);
   }
   
   /* Texto inferior esquerdo */
@@ -88,6 +109,20 @@ body {
     color: white;
     font-size: 1rem;
     z-index: 1;
+
+    & ul{
+        list-style: none;
+        
+    }
+    & li a{
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+        display: inline;
+        margin-right: 40px;
+        }
+
   }
   
   
