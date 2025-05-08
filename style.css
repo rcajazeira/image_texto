@@ -1,14 +1,16 @@
 body {
     margin: 0;
+    font-family: Arial, sans-serif;
   }
   
   .conteudo {
-    width: 100vw; 
-    height: 100vh; 
     position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
   }
   
-  .conteudo img {
+  .imagem-fundo {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -18,44 +20,74 @@ body {
     z-index: 0;
   }
   
-  /* Texto sobre a imagem */
-  .texto {
+  /* Texto "Street" no canto superior esquerdo */
+  .titulo-esquerda {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    color: white;
+    font-size: 2.5rem;
+    z-index: 1;
+  }
+  
+  /* Menu no centro superior */
+  .menu {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    z-index: 1;
+  }
+  
+  .menu li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  /* Texto no topo direito */
+  .texto-direita {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: white;
+    font-size: 1.2rem;
+    z-index: 1;
+  }
+  
+  /* Texto e botão central */
+  .texto-central {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    z-index: 1;
-    font-family: 'Arial', sans-serif;
     text-align: center;
+    z-index: 1;
   }
   
-  /* Título */
-  .texto h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: aliceblue;
-  }
-  
-  /* Lista de links */
-  .lista {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  
-  .lista li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
+  .texto-central button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    color: black;
     font-weight: bold;
-    transition: color 0.3s ease;
+    cursor: pointer;
   }
   
-  .lista li a:hover {
-    color: #f0c040;
+  /* Texto inferior esquerdo */
+  .texto-inferior {
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    color: white;
+    font-size: 1rem;
+    z-index: 1;
   }
+  
   
